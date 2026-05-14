@@ -1,37 +1,27 @@
 # QR Premium — GitHub Pages (samma upplägg som `fampro-legal`)
 
-Källfiler för en **publik** GitHub Pages-repo, parallellt med  
-[github.com/Dhafen/fampro-legal](https://github.com/Dhafen/fampro-legal) ( `index.html`, `support.html`, `privacy.html` ).
+Källfiler för **Dhafen/qrscanner-legal** på GitHub — samma upplägg som Fampro ([fampro-legal](https://github.com/Dhafen/fampro-legal)): statiska HTML-sidor + GitHub Pages från `main` / root.
 
-## Publika URL:er (efter att repot finns och Pages är påslaget)
-
-Anta repo-namnet **`qrscanner-legal`** under användaren **`Dhafen`** och att GitHub Pages publiceras från **`main`** / **root**:
+## Live (GitHub Pages)
 
 | Sida | URL |
 |------|-----|
-| Startsida | `https://dhafen.github.io/qrscanner-legal/` |
-| **Support (App Store Connect)** | `https://dhafen.github.io/qrscanner-legal/support.html` |
-| **Integritet (ASC / App Privacy)** | `https://dhafen.github.io/qrscanner-legal/privacy.html` |
+| Startsida | https://dhafen.github.io/qrscanner-legal/ |
+| Support (ASC) | https://dhafen.github.io/qrscanner-legal/support.html |
+| Integritet (ASC) | https://dhafen.github.io/qrscanner-legal/privacy.html |
 
-Byt `dhafen` / `qrscanner-legal` om du använder annat användarnamn eller repo-namn.
+Verifierat HTTP **200** efter första deploy.
 
-## Skapa repot och publicera
+## Uppdatera sidorna
 
-1. På GitHub: **New repository** → namn t.ex. `qrscanner-legal` → **Public** → skapa (utan README om du pushar denna mapp).
-2. Lokalt från denna katalog:
+Ändra HTML här, committa och pusha till `main`:
 
-   ```bash
-   cd /Users/elon/MacStudioAI/apps/qrscanner/docs/qrscanner-legal
-   git init
-   git add index.html support.html privacy.html README.md
-   git commit -m "Add GitHub Pages for QR Premium"
-   git branch -M main
-   git remote add origin https://github.com/Dhafen/qrscanner-legal.git
-   git push -u origin main
-   ```
+```bash
+cd /Users/elon/MacStudioAI/apps/qrscanner/docs/qrscanner-legal
+git add -A && git commit -m "Uppdatera legal-sidor" && git push
+```
 
-3. I repot på GitHub: **Settings → Pages** → **Build and deployment**: *Deploy from a branch* → Branch **main**, folder **/ (root)** → Save.
-4. Vänta en minut och öppna support-URL i webbläsare. Klistra in **Support URL** och **Privacy Policy URL** i App Store Connect och uppdatera `docs/APPSTORE_METADATA.md`.
+GitHub Pages bygger om inom ca 1 minut.
 
 ## Kontakt-e-post
 
